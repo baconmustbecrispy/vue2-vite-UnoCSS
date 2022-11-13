@@ -8,6 +8,10 @@
 - vue2: 2.7.14
 - element-ui: 2.15.10
 
+> Node 版本必須 v14.18.0+ 或 v16.0.0+
+> Vite uses node: import which is supported in v16.0.0+ and v14.18.0+.
+> v15 does not support this. https://nodejs.org/api/esm.html#node-imports
+
 ## 執行
 
 安裝 pnpm
