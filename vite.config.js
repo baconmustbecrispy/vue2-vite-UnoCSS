@@ -37,16 +37,16 @@ export default defineConfig(({ command, mode }) => {
   }
   return {
     ...config,
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `@import "./src/assets/css/_config.scss";
-        @import "./src/assets/css/bem.scss";
-        @import "./src/assets/css/mixins.scss";
-        @import "./src/assets/css/vars.scss";`,
-        },
-      },
-    },
+    // css: {
+    //   preprocessorOptions: {
+    //     scss: {
+    //       additionalData: `@import "./src/assets/css/_config.scss";
+    //     @import "./src/assets/css/bem.scss";
+    //     @import "./src/assets/css/mixins.scss";
+    //     @import "./src/assets/css/vars.scss";`,
+    //     },
+    //   },
+    // },
     resolve: {
       extensions: [".js", ".vue", ".json", ".scss"],
       alias: {
