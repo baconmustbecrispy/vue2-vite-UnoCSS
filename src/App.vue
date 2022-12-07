@@ -1,18 +1,28 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <HelloWorld />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
   },
 };
 </script>
 
-<style>
+<style lang="scss" scoped></style>
+
+<style lang="scss">
+body {
+  width: 100%;
+  height: 100vh;
+}
+#app {
+  width: 100%;
+  height: 100%;
+}
 </style>

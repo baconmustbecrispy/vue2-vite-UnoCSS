@@ -12,12 +12,12 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   methods: {
     open() {
       this.$message({
         showClose: true,
-        message: "您好，測試。",
+        message: '您好，測試。',
       });
     },
   },

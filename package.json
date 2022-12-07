@@ -1,27 +1,56 @@
 {
-  "name": "v2pnpmvite",
+  "name": "vue2vite",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.vue src",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "husky": "husky install && npx husky set .husky/pre-commit \"npx lint-staged\""
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.vue": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{less,css}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
-    "@iconify-json/bxs": "^1.1.4",
+    "@iconify-json/bxs": "^1.1.5",
     "@iconify-json/ic": "latest",
-    "@unocss/preset-icons": "^0.46.4",
-    "@unocss/preset-uno": "^0.46.4",
-    "@unocss/transformer-directives": "^0.46.4",
-    "unocss": "^0.46.5",
-    "vite": "^3.2.3"
+    "@unocss/preset-icons": "^0.47.5",
+    "@unocss/preset-uno": "^0.47.5",
+    "@unocss/transformer-directives": "^0.47.5",
+    "@vitejs/plugin-legacy": "^2.3.1",
+    "@vitejs/plugin-vue2": "^2.0.1",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-define-config": "^1.12.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "husky": "^8.0.2",
+    "lodash": "^4.17.21",
+    "prettier": "^2.8.0",
+    "sass": "^1.56.1",
+    "unocss": "^0.47.5",
+    "unplugin-vue-components": "^0.22.11",
+    "vite": "^3.2.4",
+    "vue-eslint-parser": "^9.1.0"
   },
   "dependencies": {
-    "@unocss/reset": "^0.46.5",
-    "element-ui": "^2.15.10",
+    "@unocss/reset": "^0.47.5",
+    "element-ui": "^2.15.12",
     "generate-source-map": "^0.0.5",
     "rollup-plugin-require-context": "^1.0.1",
-    "sass": "^1.56.1",
     "vite-plugin-vue2": "^2.0.2",
     "vue": "2.7.14",
     "vue-template-compiler": "^2.7.14"
