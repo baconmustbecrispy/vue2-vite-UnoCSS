@@ -2,6 +2,12 @@
 
 with Pnpm + ElementUI + UnoCSS
 
+## 使用
+
+```
+npx degit baconmustbecrispy/vue2vite#main my-app
+```
+
 ## 環境
 
 - node: 14.18.0
