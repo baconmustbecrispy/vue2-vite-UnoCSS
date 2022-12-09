@@ -1,11 +1,11 @@
-# Vue2 + Vite
+# Vue2 + Vite + UnoCSS
 
-with Pnpm + ElementUI + UnoCSS
+with Pnpm + ElementUI
 
 ## 使用
 
 ```
-npx degit baconmustbecrispy/vue2vite#main my-app
+npx degit baconmustbecrispy/vue2-vite-unocss#main my-app
 ```
 
 ## 環境
